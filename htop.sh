@@ -5,14 +5,28 @@
 # packages, but will sync with the mirror the repo
 # to find out what packages are available. 
 
-path=/usr/bin/htop
+#path=/usr/bin/htop
 
-if [ -f "$path" ];
+#if [ -f "$path" ];
+#then
+	#echo "$path is available, running now..."
+#else
+	#echo "$path is not available, installing now..."
+	#sudo apt update && sudo apt install -y htop
+#fi
+
+#$path
+
+## modifying script above:
+
+path=htop
+
+if command -v $path
 then
 	echo "$path is available, running now..."
 else
 	echo "$path is not available, installing now..."
-	sudo apt update && sudo apt install -y htop
+	sudo apt update && sudo  apt  install -y $path
 fi
 
 $path
