@@ -29,7 +29,7 @@ else
 	echo "Munchen ist sehr teure"
 fi
 
-# check for a presence of a file in a file system
+# check for the presence of a file in a file system
 
 if [ -f ~/scripting/date.sh ];
 then
