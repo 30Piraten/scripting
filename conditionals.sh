@@ -1,10 +1,10 @@
 #!/bin/bash
 
-flugnumer=9687
+flugnummer=9687
 
 # -eq -> equal to
 
-if [ "$flugnumer" -eq "9687" ];
+if [ "$flugnummer" -eq "9687" ];
 then
 	echo "True"
 else
@@ -13,16 +13,16 @@ fi
 
 # -ne -> not equal
 
-if [ "$flugnumer" -ne "4545" ];
+if [ "$flugnummer" -ne "4545" ];
 then
 	echo "Dein frage ist?"
 else
-	echo "Wie heiben Sie?"
+	echo "Wie heißen Sie?"
 fi
 
 # -gt -> greater than
 
-if [ "$flugnumer" -gt "1000" ];
+if [ "$flugnummer" -gt "1000" ];
 then
 	echo "Wirklich?"
 else
@@ -33,7 +33,7 @@ fi
 
 if [ -f ~/scripting/date.sh ];
 then
-	echo "The file exists."
+	echo "Die Datei existiert."
 else
 	echo "Nein!"
 fi
