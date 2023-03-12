@@ -13,11 +13,27 @@ num=1
 
 
 ## case 2
-# checking for a file
+# checking for the existence of a file
 
-while [ -f ~/testfile.txt ];
+#while [ -f ~/testfile.txt ];
+#do
+#	echo "This file exists"
+#	sleep 5
+#done
+
+# echo "The file does not exist."
+
+
+## case 3
+
+int=12
+
+while [ $int -le 25 ];
 do
-	echo "This file exists"
+	echo "Our test case starts at: $num"
+	num=$(( $num +2 ))
+	sleep 3
+	echo "The result should be $num"
 done
 
-
+echo "This test case is done, closing $num..."
