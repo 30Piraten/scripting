@@ -2,7 +2,8 @@
 
 flugnummer=9687
 
-# -eq -> equal to
+# -eq -> equal to 
+# note that we can also use the (=) to check for equality
 
 if [ "$flugnummer" -eq "9687" ];
 then
@@ -30,6 +31,7 @@ else
 fi
 
 # check for the presence of a file in a file system
+# using the -f (file flag)
 
 if [ -f ~/scripting/date.sh ];
 then
