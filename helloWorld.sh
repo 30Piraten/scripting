@@ -4,7 +4,7 @@
 # we use this to avoid name collisions. 
 # so ls -> on the terminal list storage; while $ls prints the value
 # stored in the  variable name.
-# also note that variables by defailt don't persist --> when used directly on the terminal
+# also note that variables by default don't persist --> when used directly on the terminal
 # and not inside a bash script. 
 
 echo "Hello world"
@@ -12,9 +12,9 @@ echo "Hello world"
 # creating variables
 # double quotes are used to get the values in the variable
 
-NAME="Kioya Rautenberg"
-CLASS="Piraten"
+name="Kioya Rautenberg"
+class="Piraten"
 
-echo "Mein Name ist $NAME und ich bin Mitglied von dreibig $CLASS."
+echo "Mein Name ist $name und ich bin Mitglied von dreibig $class."
 
 
